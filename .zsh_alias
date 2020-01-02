@@ -1,0 +1,6 @@
+# frequently used git commands
+alias ga="git add"
+alias gs="git status"
+alias gcm="git commit -m"
+alias gph="git push"
+alias gpl="git pull"
