@@ -14,7 +14,7 @@ export PATH=$PATH:~/.gem/ruby/2.6.0/bin
 # add rust crates to path
 export PATH=$PATH:$HOME/.cargo/bin
 # rust source code required by `racer`. see github.com/racer-rust/racer.
-# though it's optional, racer do speed up by setting it.
+# though it's optional, racer do speeded up by setting it.
 export RUST_SRC_PATH=$HOME/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src
 # add nix executables to path
 export PATH=$PATH:$HOME/.nix-profile/bin
