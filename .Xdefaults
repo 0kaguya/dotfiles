@@ -1,5 +1,5 @@
 URxvt.scrollBar: False
-URxvt.font: xft:Monaco:size=13:hinting=true
+URxvt.font: xft:Monaco:size=14:hinting=true
 URxvt.title: terminal
 URxvt.depth: 32
 URxvt.background: [70]#ffffff
