@@ -1,0 +1,34 @@
+{
+  "outbounds": [
+    {
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [{
+          "address": "0.0.0.0",
+          "port": 1080,
+          "users": [{
+            "id": "<uuid>",
+            "alterId": 64
+          }]
+        }]
+      }
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom"
+    }
+  ],
+  "inbounds": [{
+    "protocol": "socks",
+    "listen": "127.0.0.1",
+    "port": 1080
+  }],
+  "routing": {
+    "rules": [{
+      "outboundTag": "direct",
+      "type": "field",
+      "domain": [ "geosite:cn" ]
+    }]
+  }
+}
+
