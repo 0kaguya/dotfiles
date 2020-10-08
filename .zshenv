@@ -21,4 +21,7 @@ export PATH=$PATH:$HOME/.nix-profile/bin
 # package `proxychains-ng`. more info see github.com/rolf0r/proxychains-ng.
 export PROXYCHAINS_CONF_FILE=$HOME/.config/proxychains/config.conf
 # package `bat`
-export BAT_THEME="ansi-light"
+#export BAT_THEME="ansi-light"
+export BAT_THEME="ansi-dark"
+# package `calibre`
+export CALIBRE_USE_DARK_PALETTE=1
