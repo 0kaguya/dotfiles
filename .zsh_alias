@@ -6,3 +6,7 @@ alias gph="git push"
 alias gpl="git pull"
 # proxychains
 alias pcns="proxychains -q"
+# start emacs with a lightweight config in cli mode
+alias ew="emacs -nw -q -l $HOME/.emacs.quick.d/init.el"
+# start gui emacsclient
+alias em="emacsclient -nc"
