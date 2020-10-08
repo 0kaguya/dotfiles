@@ -6,3 +6,6 @@ URxvt.depth: 32
 ! URxvt.background: [70]#ffffff
 URxvt.background: [70]#000000
 URxvt.foreground: #b0b0b0
+! lighter blue
+URxvt.color4: #2587cc
+URxvt.color12: #2ca2f5
