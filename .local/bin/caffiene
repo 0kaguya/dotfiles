@@ -1,0 +1,13 @@
+#! /bin/bash
+actimeout=`gsettings get org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout`
+battimeout=`gsettings get org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout`
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 0
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 0
+echo "Auto suspend disabled. press Ctrl-D to leave."
+read Input
+if [[ $? == 1 ]]
+then
+    gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout $actimeout
+    gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout $battimeout
+    echo "Auto suspend settings restored."
+fi
