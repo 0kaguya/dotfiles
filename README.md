@@ -1,0 +1,3 @@
+```
+$ stow <package_name>
+```

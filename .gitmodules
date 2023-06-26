@@ -1,3 +1,0 @@
-[submodule ".emacs.quick.d"]
-	path = .emacs.quick.d
-	url = https://github.com/0kaguya/.emacs.d
