@@ -1,3 +1,6 @@
+make sure this repository is placed right under `~/`, e.g. `~/dotfiles`.
+
 ``` bash
-$ stow <package_name>
+$ cd ~/dotfiles
+$ stow _<package_name>_
 ```
