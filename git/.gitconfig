@@ -1,0 +1,6 @@
+[core]
+    editor = vim
+
+[user]
+    name = "0.kgy"
+    email = my@kaguya.org
