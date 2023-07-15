@@ -4,3 +4,6 @@
 [user]
     name = "0.kgy"
     email = my@kaguya.org
+
+[init]
+    defaultBranch = master
