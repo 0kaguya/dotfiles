@@ -20,14 +20,14 @@ then
     . /usr/share/git/completion/git-prompt.sh
 fi
 GIT_PS1_SHOWDIRTYSTATE=1
-git_prompt='\[$(__git_ps1 "(%s) ")\]'
+git_prompt='$(__git_ps1 "(%s) ")'
 
 # assemble prompt
-time='\[[\t]\]'
-user_host='\[\e[1;32m\u@\h\e[m\]' # '\e[1;32m ... \e[m' set a color of color code (1,32).
-whereiam='\[\e[1;34m\w\e[m\]'
+time='[\t]'
+user_host='\[\e[1;32m\]\u@\h\[\e[m\]' # '\e[1;32m ... \e[m' set a color of color code (1,32).
+whereiam='\[\e[1;34m\]\w\[\e[m\]'
 git_prompt=$git_prompt
-prompt='\[\e[0;33m\$\e[m\]'
+prompt='\[\e[0;33m\]\$\[\e[m\]'
 PS1="$time $user_host:$whereiam $git_prompt$prompt "
 PS2="$time >>> "
 
