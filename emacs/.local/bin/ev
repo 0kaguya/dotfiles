@@ -1,0 +1,4 @@
+#!/bin/sh
+# Open a file in read-only mode in emacs.
+
+emacs -nw --eval "(view-file \"$1\")"
