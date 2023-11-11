@@ -1,3 +1,5 @@
+# private environment variables.
+. $HOME/.zshenv.private
 # prompt
 PS1="%{[0;32m%}%~%{[0;34m%}\$ %{[0;39m%}"
 # user space executables
