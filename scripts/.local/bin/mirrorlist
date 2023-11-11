@@ -1,0 +1,20 @@
+#! /bin/sh
+if [ -z $1 ]; then
+    echo "Usage: mirrorlist <country_code>"; exit 0
+fi
+
+if [ -z "$(pacman -Qs pacman-contrib)" ]; then
+    echo "pacman-contrib is required for this script"; exit 0
+fi
+
+if [ -z "$(pacman -Qs parallel)" ]; then
+    p="-p"
+fi
+
+url="https://archlinux.org/mirrorlist"
+country=$(printf $1 | awk '{printf toupper($0)}')
+options="protocol=https&use-mirror-status=on"
+
+curl -s "$url/?country=$country&$options" |
+    awk '/^#Server/ {$1="Server"; print}' |
+    rankmirrors $p -n 5 -
